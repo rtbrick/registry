@@ -1,0 +1,52 @@
+{
+  "name": "rtbrick-docs",
+  "displayName": "RtBrick Documentation",
+  "description": "Access and search RtBrick's technical documentation including networking configuration guides, API references, and technical specifications",
+  "icon": "https://www.rtbrick.com/favicon.ico",
+  "author": {
+    "name": "Pravin Bhandarkar",
+    "url": "https://github.com/rtbrick"
+  },
+  "sourceUrl": "https://github.com/yourusername/rtb-doc-mcp-server",
+  "license": "MIT",
+  "runtime": "python",
+  "categories": [
+    "documentation",
+    "search",
+    "enterprise"
+  ],
+  "tags": [
+    "networking",
+    "documentation",
+    "rtbrick",
+    "technical-docs",
+    "search"
+  ],
+  "installation": {
+    "pip": "rtb-doc-mcp-server"
+  },
+  "configuration": {
+    "type": "object",
+    "properties": {
+      "config_path": {
+        "type": "string",
+        "description": "Path to config.json file",
+        "required": false
+      }
+    }
+  },
+  "tools": [
+    {
+      "name": "search_documentation",
+      "description": "Search through RtBrick documentation with keywords"
+    },
+    {
+      "name": "get_document",
+      "description": "Retrieve full content of a specific documentation file"
+    },
+    {
+      "name": "list_all_documents",
+      "description": "List all available documentation files"
+    }
+  ]
+}
